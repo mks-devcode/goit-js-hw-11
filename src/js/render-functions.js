@@ -44,7 +44,9 @@ export function imagesTemplate(arr) {
 
 
 export function createGallery(images) {
-    ulElem.innerHTML = images;
+    const markup = imagesTemplate(images);
+    console.log(markup)
+    ulElem.innerHTML = markup;
     lightbox.refresh();
 };
 

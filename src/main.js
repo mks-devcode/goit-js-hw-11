@@ -33,9 +33,7 @@ formEl.addEventListener('submit', (e) => {
             });
         };
 
-        const markup = imagesTemplate(data.hits);
-        console.log(markup)
-        createGallery(markup);
+        createGallery(data.hits);
     })
         .catch(error => iziToast.error({
             message: error.message,
